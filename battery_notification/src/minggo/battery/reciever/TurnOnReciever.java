@@ -15,5 +15,6 @@ public class TurnOnReciever extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 		//开启监听服务
 		context.startService(new Intent(context, BatteryService.class));
+		
 	}
 }
