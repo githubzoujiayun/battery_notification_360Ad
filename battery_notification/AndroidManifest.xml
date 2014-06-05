@@ -36,7 +36,7 @@
         <!-- 渠道商编号，其中name请不要改，将value修改为渠道商编号。渠道名称请到mtj.baidu.com的渠道管理中修改 -->
         <meta-data
             android:name="BaiduMobAd_CHANNEL"
-            android:value="机锋_广告" />
+            android:value="360_广告" />
         <!-- 您从百度网站获取的APP KEY -->
         <!-- 旧a436267c67 -->
         <meta-data
