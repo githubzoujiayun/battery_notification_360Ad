@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee" >
+
+        <TextView
+            android:id="@+id/app_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:gravity="center"
+            android:text="@string/version"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/low_power_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/app_version_tv"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true"
+            android:drawableRight="@drawable/on_off_button"
+            android:gravity="center_vertical"
+            android:paddingLeft="28dp"
+            android:text="@string/battery_low"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/zheng_sound_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/low_power_bt"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true"
+            android:drawableRight="@drawable/on_off_button"
+            android:gravity="center_vertical"
+            android:paddingLeft="28dp"
+            android:text="@string/time_alarm"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/exitapp"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_style_red"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/exit"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/exitapp"
+            android:layout_alignBottom="@+id/exitapp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_style_green"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/game_shack_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/submitButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:src="@drawable/dice_1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/game_shack_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/shuai_yi_shuai"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/changebt"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/exitapp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_style_green"
+            android:text="@string/shuai_jia_wu"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="18dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/bt_cancel_ad"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:visibility="gone"
+                android:src="@drawable/ows_search_clear" />
+        </FrameLayout>
+    </RelativeLayout>
+    <!--
+         <com.baidu.mobads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    -->
+
+</RelativeLayout>

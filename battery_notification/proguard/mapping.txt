@@ -1,0 +1,1693 @@
+android.support.v4.app.ActivityCompatHoneycomb -> android.support.v4.app.a:
+    void invalidateOptionsMenu(android.app.Activity) -> a
+android.support.v4.app.BackStackRecord -> android.support.v4.app.b:
+    android.support.v4.app.FragmentManagerImpl mManager -> a
+    android.support.v4.app.BackStackRecord$Op mHead -> b
+    android.support.v4.app.BackStackRecord$Op mTail -> c
+    int mNumOp -> d
+    int mEnterAnim -> e
+    int mExitAnim -> f
+    int mPopEnterAnim -> g
+    int mPopExitAnim -> h
+    int mTransition -> i
+    int mTransitionStyle -> j
+    boolean mAddToBackStack -> k
+    boolean mAllowAddToBackStack -> l
+    java.lang.String mName -> m
+    boolean mCommitted -> n
+    int mIndex -> o
+    int mBreadCrumbTitleRes -> p
+    java.lang.CharSequence mBreadCrumbTitleText -> q
+    int mBreadCrumbShortTitleRes -> r
+    java.lang.CharSequence mBreadCrumbShortTitleText -> s
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void addOp(android.support.v4.app.BackStackRecord$Op) -> a
+    void bumpBackStackNesting(int) -> a
+    void run() -> run
+    void popFromBackStack(boolean) -> a
+    java.lang.String getName() -> a
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.c:
+    android.support.v4.app.BackStackRecord$Op next -> a
+    android.support.v4.app.BackStackRecord$Op prev -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
+    int[] mOps -> a
+    int mTransition -> b
+    int mTransitionStyle -> c
+    java.lang.String mName -> d
+    int mIndex -> e
+    int mBreadCrumbTitleRes -> f
+    java.lang.CharSequence mBreadCrumbTitleText -> g
+    int mBreadCrumbShortTitleRes -> h
+    java.lang.CharSequence mBreadCrumbShortTitleText -> i
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.d:
+    android.support.v4.app.BackStackState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.BackStackState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
+    java.util.HashMap sClassMap -> N
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mActivity -> t
+    int mFragmentId -> u
+    int mContainerId -> v
+    java.lang.String mTag -> w
+    boolean mHidden -> x
+    boolean mDetached -> y
+    boolean mRetainInstance -> z
+    boolean mRetaining -> A
+    boolean mHasMenu -> B
+    boolean mMenuVisible -> C
+    boolean mCalled -> D
+    int mNextAnim -> E
+    android.view.ViewGroup mContainer -> F
+    android.view.View mView -> G
+    android.view.View mInnerView -> H
+    boolean mDeferStart -> I
+    boolean mUserVisibleHint -> J
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> K
+    boolean mLoadersStarted -> L
+    boolean mCheckedForLoaderManager -> M
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState() -> a
+    void setIndex(int) -> a
+    boolean isInBackStack() -> b
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    android.support.v4.app.FragmentActivity getActivity() -> c
+    void onHiddenChanged(boolean) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    android.view.LayoutInflater getLayoutInflater(android.os.Bundle) -> a
+    void onInflate(android.app.Activity,android.util.AttributeSet,android.os.Bundle) -> a
+    void onAttach(android.app.Activity) -> a
+    android.view.animation.Animation onCreateAnimation(int,boolean,int) -> a
+    void onCreate(android.os.Bundle) -> b
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onActivityCreated(android.os.Bundle) -> c
+    void onStart() -> d
+    void onResume() -> e
+    void onSaveInstanceState(android.os.Bundle) -> d
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onPause() -> f
+    void onStop() -> g
+    void onLowMemory() -> onLowMemory
+    void onDestroyView() -> h
+    void onDestroy() -> i
+    void initState() -> j
+    void onDetach() -> k
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    void onPrepareOptionsMenu(android.view.Menu) -> a
+    void onDestroyOptionsMenu() -> l
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void onOptionsMenuClosed(android.view.Menu) -> b
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> b
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void performStart() -> m
+    void performStop() -> n
+    void performReallyStop() -> o
+    void performDestroyView() -> p
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.e:
+android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
+    android.os.Bundle mState -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.f:
+    android.support.v4.app.Fragment$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.Fragment$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentActivity -> android.support.v4.app.g:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    boolean mCreated -> c
+    boolean mResumed -> d
+    boolean mStopped -> e
+    boolean mReallyStopped -> f
+    boolean mRetaining -> g
+    boolean mOptionsMenuInvalidated -> h
+    boolean mCheckedForLoaderManager -> i
+    boolean mLoadersStarted -> j
+    android.support.v4.util.SparseArrayCompat mAllLoaderManagers -> k
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> l
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    void onResumeFragments() -> a
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    java.lang.Object onRetainCustomNonConfigurationInstance() -> b
+    void supportInvalidateOptionsMenu() -> c
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    void doReallyStop(boolean) -> a
+    void onReallyStop() -> d
+    void onAttachFragment(android.support.v4.app.Fragment) -> a
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void invalidateSupportFragmentIndex(int) -> a
+    android.support.v4.app.LoaderManagerImpl getLoaderManager(int,boolean,boolean) -> a
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.h:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.i:
+    java.lang.Object activity -> a
+    java.lang.Object custom -> b
+    java.util.HashMap children -> c
+    java.util.ArrayList fragments -> d
+    android.support.v4.util.SparseArrayCompat loaders -> e
+android.support.v4.app.FragmentManager -> android.support.v4.app.j:
+android.support.v4.app.FragmentManager$OnBackStackChangedListener -> android.support.v4.app.k:
+    void onBackStackChanged() -> a
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.l:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> b
+    java.util.ArrayList mPendingActions -> c
+    java.lang.Runnable[] mTmpActions -> d
+    boolean mExecutingActions -> e
+    java.util.ArrayList mActive -> f
+    java.util.ArrayList mAdded -> g
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    java.util.ArrayList mBackStackChangeListeners -> m
+    int mCurState -> n
+    android.support.v4.app.FragmentActivity mActivity -> o
+    boolean mNeedMenuInvalidate -> p
+    boolean mStateSaved -> q
+    boolean mDestroyed -> r
+    java.lang.String mNoTransactionsBecause -> s
+    boolean mHavePendingDeferredStart -> t
+    android.os.Bundle mStateBundle -> u
+    android.util.SparseArray mStateArray -> v
+    java.lang.Runnable mExecCommit -> w
+    android.view.animation.Interpolator DECELERATE_QUINT -> x
+    android.view.animation.Interpolator DECELERATE_CUBIC -> y
+    android.view.animation.Interpolator ACCELERATE_QUINT -> z
+    android.view.animation.Interpolator ACCELERATE_CUBIC -> A
+    boolean executePendingTransactions() -> a
+    boolean popBackStackImmediate() -> b
+    void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation(android.content.Context,float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation(android.content.Context,float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void performPendingDeferredStart(android.support.v4.app.Fragment) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> b
+    void moveToState(int,boolean) -> a
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> c
+    void makeActive(android.support.v4.app.Fragment) -> c
+    void makeInactive(android.support.v4.app.Fragment) -> d
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void checkStateLoss() -> r
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> b
+    boolean execPendingActions() -> d
+    void reportBackStackChanged() -> e
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> a
+    boolean popBackStackState(android.os.Handler,java.lang.String,int,int) -> a
+    java.util.ArrayList retainNonConfig() -> f
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> e
+    android.os.Bundle saveFragmentBasicState(android.support.v4.app.Fragment) -> f
+    android.os.Parcelable saveAllState() -> g
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity) -> a
+    void noteStateNotSaved() -> h
+    void dispatchCreate() -> i
+    void dispatchActivityCreated() -> j
+    void dispatchStart() -> k
+    void dispatchResume() -> l
+    void dispatchPause() -> m
+    void dispatchStop() -> n
+    void dispatchReallyStop() -> o
+    void dispatchDestroy() -> p
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> q
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected(android.view.MenuItem) -> b
+    void dispatchOptionsMenuClosed(android.view.Menu) -> b
+    int reverseTransit(int) -> c
+    int transitToStyleIndex(int,boolean) -> b
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.m:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentManagerState:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.n:
+    android.support.v4.app.FragmentManagerState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentManagerState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
+    java.lang.String mClassName -> a
+    int mIndex -> b
+    boolean mFromLayout -> c
+    int mFragmentId -> d
+    int mContainerId -> e
+    java.lang.String mTag -> f
+    boolean mRetainInstance -> g
+    boolean mDetached -> h
+    android.os.Bundle mArguments -> i
+    android.os.Bundle mSavedFragmentState -> j
+    android.support.v4.app.Fragment mInstance -> k
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.o:
+    android.support.v4.app.FragmentState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.p:
+android.support.v4.app.LoaderManager -> android.support.v4.app.q:
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.r:
+    android.support.v4.content.Loader onCreateLoader(int,android.os.Bundle) -> a
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    void onLoaderReset(android.support.v4.content.Loader) -> a
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.s:
+    boolean DEBUG -> a
+    android.support.v4.util.SparseArrayCompat mLoaders -> b
+    android.support.v4.util.SparseArrayCompat mInactiveLoaders -> c
+    android.support.v4.app.FragmentActivity mActivity -> d
+    boolean mStarted -> e
+    boolean mRetaining -> f
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.t:
+    int mId -> a
+    android.os.Bundle mArgs -> b
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
+    android.support.v4.content.Loader mLoader -> d
+    boolean mHaveData -> e
+    boolean mDeliveredData -> f
+    java.lang.Object mData -> g
+    boolean mStarted -> h
+    boolean mRetaining -> i
+    boolean mRetainingStarted -> j
+    boolean mReportNextStart -> k
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
+    android.support.v4.app.LoaderManagerImpl this$0 -> o
+    void start() -> a
+    void retain() -> b
+    void finishRetain() -> c
+    void reportStart() -> d
+    void stop() -> e
+    void destroy() -> f
+    void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.u:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.v:
+android.support.v4.content.Loader -> android.support.v4.a.a:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    boolean mStarted -> c
+    boolean mAbandoned -> d
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> a
+    void onStartLoading() -> b
+    void stopLoading() -> c
+    void onStopLoading() -> d
+    void reset() -> e
+    void onReset() -> f
+    java.lang.String dataToString(java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.b:
+android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
+    android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorCallbacks -> android.support.v4.b.c:
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+    java.lang.Object[] newArray(int) -> a
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.b.d:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub -> android.support.v4.b.e:
+    android.os.Parcelable$Creator instantiate(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.util.DebugUtils -> android.support.v4.c.a:
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> android.support.v4.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.SparseArrayCompat -> android.support.v4.c.c:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    java.lang.Object get(int) -> a
+    java.lang.Object get(int,java.lang.Object) -> a
+    void delete(int) -> b
+    void remove(int) -> c
+    void removeAt(int) -> d
+    void gc() -> c
+    void put(int,java.lang.Object) -> b
+    int size() -> a
+    int keyAt(int) -> e
+    java.lang.Object valueAt(int) -> f
+    void clear() -> b
+    int binarySearch(int[],int,int,int) -> a
+    int idealByteArraySize(int) -> g
+    int idealIntArraySize(int) -> h
+android.support.v4.view.KeyEventCompat -> android.support.v4.view.a:
+    android.support.v4.view.KeyEventCompat$KeyEventVersionImpl IMPL -> a
+    boolean hasModifiers(android.view.KeyEvent,int) -> a
+    boolean hasNoModifiers(android.view.KeyEvent) -> a
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.b:
+    int metaStateFilterDirectionalModifiers(int,int,int,int,int) -> a
+    int normalizeMetaState(int) -> a
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.c:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.d:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompatHoneycomb -> android.support.v4.view.e:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> a
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.f:
+    android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
+    int getActionIndex(android.view.MotionEvent) -> a
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.g:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.h:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.i:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompatEclair -> android.support.v4.view.j:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.PagerAdapter -> android.support.v4.view.k:
+    android.database.DataSetObservable mObservable -> a
+    int getCount() -> a
+    void startUpdate(android.view.ViewGroup) -> a
+    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
+    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.ViewGroup,int,java.lang.Object) -> b
+    void finishUpdate(android.view.ViewGroup) -> b
+    void startUpdate(android.view.View) -> a
+    java.lang.Object instantiateItem(android.view.View,int) -> a
+    void destroyItem(android.view.View,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.View,int,java.lang.Object) -> b
+    void finishUpdate(android.view.View) -> b
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    android.os.Parcelable saveState() -> b
+    void restoreState(android.os.Parcelable,java.lang.ClassLoader) -> a
+    int getItemPosition(java.lang.Object) -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+    float getPageWidth(int) -> a
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.l:
+    android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.m:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.n:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.o:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompatHoneycomb -> android.support.v4.view.p:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.ViewCompat -> android.support.v4.view.q:
+    android.support.v4.view.ViewCompat$ViewCompatImpl IMPL -> a
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.r:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    long getFrameTime() -> a
+android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.s:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$HCViewCompatImpl -> android.support.v4.view.t:
+    long getFrameTime() -> a
+android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.u:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompat$JBViewCompatImpl -> android.support.v4.view.v:
+    void postInvalidateOnAnimation(android.view.View) -> b
+android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.w:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+android.support.v4.view.ViewCompatGingerbread -> android.support.v4.view.x:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompatHC -> android.support.v4.view.y:
+    long getFrameTime() -> a
+android.support.v4.view.ViewCompatICS -> android.support.v4.view.z:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompatJB -> android.support.v4.view.aa:
+    void postInvalidateOnAnimation(android.view.View) -> a
+android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
+    int[] LAYOUT_ATTRS -> a
+    java.util.Comparator COMPARATOR -> b
+    android.view.animation.Interpolator sInterpolator -> c
+    java.util.ArrayList mItems -> d
+    android.support.v4.view.ViewPager$ItemInfo mTempItem -> e
+    android.graphics.Rect mTempRect -> f
+    android.support.v4.view.PagerAdapter mAdapter -> g
+    int mCurItem -> h
+    int mRestoredCurItem -> i
+    android.os.Parcelable mRestoredAdapterState -> j
+    java.lang.ClassLoader mRestoredClassLoader -> k
+    android.widget.Scroller mScroller -> l
+    android.support.v4.view.ViewPager$PagerObserver mObserver -> m
+    int mPageMargin -> n
+    android.graphics.drawable.Drawable mMarginDrawable -> o
+    int mTopPageBounds -> p
+    int mBottomPageBounds -> q
+    float mFirstOffset -> r
+    float mLastOffset -> s
+    int mChildWidthMeasureSpec -> t
+    int mChildHeightMeasureSpec -> u
+    boolean mInLayout -> v
+    boolean mScrollingCacheEnabled -> w
+    boolean mPopulatePending -> x
+    int mOffscreenPageLimit -> y
+    boolean mIsBeingDragged -> z
+    boolean mIsUnableToDrag -> A
+    int mDefaultGutterSize -> B
+    int mGutterSize -> C
+    int mTouchSlop -> D
+    float mInitialMotionX -> E
+    float mLastMotionX -> F
+    float mLastMotionY -> G
+    int mActivePointerId -> H
+    android.view.VelocityTracker mVelocityTracker -> I
+    int mMinimumVelocity -> J
+    int mMaximumVelocity -> K
+    int mFlingDistance -> L
+    int mCloseEnough -> M
+    boolean mFakeDragging -> N
+    android.support.v4.widget.EdgeEffectCompat mLeftEdge -> O
+    android.support.v4.widget.EdgeEffectCompat mRightEdge -> P
+    boolean mFirstLayout -> Q
+    boolean mNeedCalculatePageOffsets -> R
+    boolean mCalledSuper -> S
+    int mDecorChildCount -> T
+    android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> U
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> V
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> W
+    int mScrollState -> Z
+    void setScrollState(int) -> setScrollState
+    void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter
+    void removeNonDecorViews() -> f
+    android.support.v4.view.PagerAdapter getAdapter() -> getAdapter
+    void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener) -> setOnAdapterChangeListener
+    void setCurrentItem(int) -> setCurrentItem
+    void setCurrentItem(int,boolean) -> a
+    int getCurrentItem() -> getCurrentItem
+    void setCurrentItemInternal(int,boolean,boolean) -> a
+    void setCurrentItemInternal(int,boolean,boolean,int) -> a
+    void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> setOnPageChangeListener
+    int getOffscreenPageLimit() -> getOffscreenPageLimit
+    void setOffscreenPageLimit(int) -> setOffscreenPageLimit
+    void setPageMargin(int) -> setPageMargin
+    int getPageMargin() -> getPageMargin
+    void setPageMarginDrawable(android.graphics.drawable.Drawable) -> setPageMarginDrawable
+    void setPageMarginDrawable(int) -> setPageMarginDrawable
+    boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
+    void drawableStateChanged() -> drawableStateChanged
+    float distanceInfluenceForSnapDuration(float) -> a
+    void smoothScrollTo(int,int,int) -> a
+    android.support.v4.view.ViewPager$ItemInfo addNewItem(int,int) -> a
+    void dataSetChanged() -> a
+    void populate() -> b
+    void populate(int) -> a
+    void calculatePageOffsets(android.support.v4.view.ViewPager$ItemInfo,int,android.support.v4.view.ViewPager$ItemInfo) -> a
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    android.support.v4.view.ViewPager$ItemInfo infoForChild(android.view.View) -> a
+    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForPosition(int) -> b
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void recomputeScrollPosition(int,int,int,int) -> a
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void computeScroll() -> computeScroll
+    boolean pageScrolled(int) -> d
+    void onPageScrolled(int,float,int) -> a
+    void completeScroll() -> g
+    boolean isGutterDrag(float,float) -> a
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean performDrag(float) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForCurrentScrollPosition() -> h
+    int determineTargetPage(int,float,int,int) -> a
+    void draw(android.graphics.Canvas) -> draw
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSecondaryPointerUp(android.view.MotionEvent) -> a
+    void endDrag() -> i
+    void setScrollingCacheEnabled(boolean) -> setScrollingCacheEnabled
+    boolean canScroll(android.view.View,boolean,int,int,int) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean executeKeyEvent(android.view.KeyEvent) -> a
+    boolean arrowScroll(int) -> c
+    android.graphics.Rect getChildRectInPagerCoordinates(android.graphics.Rect,android.view.View) -> a
+    boolean pageLeft() -> c
+    boolean pageRight() -> d
+    void addFocusables(java.util.ArrayList,int,int) -> addFocusables
+    void addTouchables(java.util.ArrayList) -> addTouchables
+    boolean onRequestFocusInDescendants(int,android.graphics.Rect) -> onRequestFocusInDescendants
+    boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    int[] access$300() -> e
+android.support.v4.view.ViewPager$1 -> android.support.v4.view.ab:
+    int compare(android.support.v4.view.ViewPager$ItemInfo,android.support.v4.view.ViewPager$ItemInfo) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.view.ViewPager$2 -> android.support.v4.view.ac:
+    float getInterpolation(float) -> getInterpolation
+android.support.v4.view.ViewPager$Decor -> android.support.v4.view.ad:
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.ae:
+    java.lang.Object object -> a
+    int position -> b
+    boolean scrolling -> c
+    float widthFactor -> d
+    float offset -> e
+android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.af:
+    boolean isDecor -> a
+    int gravity -> b
+    float widthFactor -> c
+    boolean needsMeasure -> d
+android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.ag:
+    void onAdapterChanged(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.ah:
+    void onPageScrolled(int,float,int) -> a
+    void onPageSelected(int) -> a
+    void onPageScrollStateChanged(int) -> b
+android.support.v4.view.ViewPager$PagerObserver -> android.support.v4.view.ai:
+    android.support.v4.view.ViewPager this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPager$SavedState:
+    int position -> a
+    android.os.Parcelable adapterState -> b
+    java.lang.ClassLoader loader -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.aj:
+    android.support.v4.view.ViewPager$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> b
+    android.support.v4.view.ViewPager$SavedState[] newArray(int) -> b
+    java.lang.Object[] newArray(int) -> a
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+android.support.v4.widget.EdgeEffectCompat -> android.support.v4.d.a:
+    java.lang.Object mEdgeEffect -> a
+    android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl IMPL -> b
+    void setSize(int,int) -> a
+    boolean isFinished() -> a
+    void finish() -> b
+    boolean onPull(float) -> a
+    boolean onRelease() -> c
+    boolean draw(android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl -> android.support.v4.d.b:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl -> android.support.v4.d.c:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl -> android.support.v4.d.d:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompatIcs -> android.support.v4.d.e:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+com.baidu.mobstat.SendStrategyEnum -> com.a.a.a:
+    com.baidu.mobstat.SendStrategyEnum APP_START -> a
+    com.baidu.mobstat.SendStrategyEnum ONCE_A_DAY -> b
+    com.baidu.mobstat.SendStrategyEnum SET_TIME_INTERVAL -> c
+    com.baidu.mobstat.SendStrategyEnum[] a -> d
+    com.baidu.mobstat.SendStrategyEnum[] values() -> values
+    com.baidu.mobstat.SendStrategyEnum valueOf(java.lang.String) -> valueOf
+com.baidu.mobstat.StatService -> com.a.a.b:
+    boolean a -> a
+    boolean a(java.lang.Class,java.lang.String) -> a
+    void onResume(android.content.Context) -> a
+    void onPause(android.content.Context) -> b
+    void onEvent(android.content.Context,java.lang.String,java.lang.String,int) -> a
+    void onEvent(android.content.Context,java.lang.String,java.lang.String) -> a
+    boolean a(android.content.Context,java.lang.String) -> a
+    void b(android.content.Context) -> c
+com.baidu.mobstat.a -> com.a.a.c:
+    com.baidu.mobstat.a a -> a
+    java.lang.Thread$UncaughtExceptionHandler b -> b
+    android.content.Context c -> c
+    com.baidu.mobstat.a a() -> a
+    void a(android.content.Context) -> a
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    void a(long,java.lang.String) -> a
+    org.json.JSONArray b(android.content.Context) -> b
+com.baidu.mobstat.a.a -> com.a.a.a.a:
+    java.net.Proxy a -> a
+    java.net.Proxy b -> b
+    java.lang.String a(boolean,android.content.Context,java.lang.String) -> a
+    void a(boolean,android.content.Context,java.lang.String,java.lang.String,boolean) -> a
+    void a(android.content.Context,java.lang.String,java.lang.String,boolean) -> a
+    java.lang.String a(android.content.Context,java.lang.String) -> a
+    byte[] b(android.content.Context,java.lang.String) -> b
+    boolean c(android.content.Context,java.lang.String) -> c
+    boolean a(java.lang.String) -> a
+    void a(java.lang.String,java.lang.String,boolean) -> a
+    java.lang.String b(java.lang.String) -> b
+    java.net.HttpURLConnection a(android.content.Context,java.lang.String,int,int) -> a
+    void d(android.content.Context,java.lang.String) -> d
+    boolean e(android.content.Context,java.lang.String) -> e
+    void c(java.lang.String) -> c
+com.baidu.mobstat.a.b -> com.a.a.a.b:
+    java.text.SimpleDateFormat a -> a
+    void a() -> a
+    void b(java.lang.String,java.lang.String) -> b
+    void a(java.lang.String,java.lang.String,java.lang.Throwable) -> a
+    boolean a(java.lang.String,int) -> a
+    boolean a(int) -> a
+    int a(java.lang.String) -> a
+    int a(java.lang.Throwable) -> a
+    int a(java.lang.Object[]) -> a
+    int a(java.lang.String,java.lang.String) -> a
+    int a(java.lang.String,java.lang.Throwable) -> a
+    java.lang.String d(java.lang.Object[]) -> d
+    int b(java.lang.String) -> b
+    int b(java.lang.Object[]) -> b
+    int c(java.lang.Object[]) -> c
+    int c(java.lang.String) -> c
+com.baidu.mobstat.b -> com.a.a.d:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    int d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    int g -> g
+    int h -> h
+    java.lang.String i -> i
+    java.lang.String j -> j
+    java.lang.String k -> k
+    java.lang.String l -> l
+    java.lang.String m -> m
+    java.lang.String n -> n
+    java.lang.String o -> o
+    int p -> p
+    org.json.JSONObject q -> q
+    org.json.JSONArray r -> r
+    org.json.JSONArray s -> s
+    org.json.JSONArray t -> t
+    org.json.JSONArray u -> u
+    boolean v -> v
+    com.baidu.mobstat.b w -> w
+    com.baidu.mobstat.b a() -> a
+    void a(org.json.JSONObject,boolean) -> a
+    void c(java.lang.String) -> a
+    void b(org.json.JSONObject,boolean) -> b
+    void a(java.lang.String,java.lang.String,int,long,int) -> a
+    void c(org.json.JSONObject,boolean) -> c
+    void a(long,java.lang.String) -> a
+    void a(android.content.Context) -> a
+    void b() -> b
+    void b(android.content.Context) -> b
+    void a(boolean) -> a
+    boolean d() -> d
+    void c(android.content.Context) -> c
+    void d(android.content.Context) -> d
+    boolean e(android.content.Context) -> e
+    boolean c() -> c
+    java.lang.String a(java.lang.String,android.content.Context) -> a
+    java.lang.String f(android.content.Context) -> f
+com.baidu.mobstat.c -> com.a.a.e:
+    android.os.HandlerThread c -> c
+    android.os.Handler d -> d
+    com.baidu.mobstat.c e -> e
+    java.util.HashMap a -> a
+    java.lang.String b -> b
+    com.baidu.mobstat.c a() -> a
+    void a(android.content.Context,java.lang.String,java.lang.String,int) -> a
+com.baidu.mobstat.d -> com.a.a.f:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    int c -> c
+    android.content.Context d -> d
+    com.baidu.mobstat.c e -> e
+    void run() -> run
+com.baidu.mobstat.i -> com.a.a.g:
+    com.baidu.mobstat.i a -> a
+    boolean b -> b
+    com.baidu.mobstat.i a() -> a
+    void a(android.content.Context) -> a
+    void b(android.content.Context) -> b
+com.baidu.mobstat.j -> com.a.a.h:
+    com.baidu.mobstat.j a -> a
+    android.content.Context b -> b
+    boolean c -> c
+    boolean d -> d
+    com.baidu.mobstat.j a() -> a
+    void a(android.content.Context) -> a
+    boolean b() -> b
+    void d() -> d
+    void e() -> e
+    boolean c() -> c
+    void run() -> run
+com.baidu.mobstat.k -> com.a.a.i:
+    android.os.HandlerThread c -> c
+    boolean d -> d
+    com.baidu.mobstat.SendStrategyEnum e -> e
+    int f -> f
+    java.util.Timer g -> g
+    int h -> h
+    boolean i -> i
+    android.os.Handler j -> j
+    com.baidu.mobstat.k k -> k
+    boolean a -> a
+    int b -> b
+    android.content.SharedPreferences a(android.content.Context) -> a
+    com.baidu.mobstat.k a() -> a
+    void b(android.content.Context) -> b
+    void c(android.content.Context) -> c
+    void d(android.content.Context) -> d
+    void e(android.content.Context) -> e
+    void a(android.content.Context,boolean) -> a
+    void f(android.content.Context) -> f
+    boolean a(com.baidu.mobstat.k,boolean) -> a
+    boolean a(com.baidu.mobstat.k) -> a
+    java.util.Timer b(com.baidu.mobstat.k) -> b
+    java.util.Timer a(com.baidu.mobstat.k,java.util.Timer) -> a
+    com.baidu.mobstat.SendStrategyEnum a(com.baidu.mobstat.k,com.baidu.mobstat.SendStrategyEnum) -> a
+    int a(com.baidu.mobstat.k,int) -> a
+    boolean b(com.baidu.mobstat.k,boolean) -> b
+    com.baidu.mobstat.SendStrategyEnum c(com.baidu.mobstat.k) -> c
+    boolean d(com.baidu.mobstat.k) -> d
+    int e(com.baidu.mobstat.k) -> e
+    android.os.Handler b() -> b
+    void a(com.baidu.mobstat.k,android.content.Context) -> a
+com.baidu.mobstat.l -> com.a.a.j:
+    android.content.Context a -> a
+    com.baidu.mobstat.k b -> b
+    void run() -> run
+com.baidu.mobstat.m -> com.a.a.k:
+    com.baidu.mobstat.l a -> a
+    void run() -> run
+com.baidu.mobstat.n -> com.a.a.l:
+    android.content.Context a -> a
+    com.baidu.mobstat.k b -> b
+    void run() -> run
+com.baidu.mobstat.o -> com.a.a.m:
+    android.content.Context a -> a
+    com.baidu.mobstat.k b -> b
+    void run() -> run
+com.baidu.mobstat.p -> com.a.a.n:
+    long b -> b
+    long c -> c
+    int d -> d
+    java.util.List a -> a
+    void a(java.lang.String,long) -> a
+    void a(long) -> a
+    long a() -> a
+    void b(long) -> b
+    void b() -> b
+    org.json.JSONObject c() -> c
+    void a(int) -> a
+    int d() -> d
+com.baidu.mobstat.q -> com.a.a.o:
+    java.lang.String b -> b
+    long c -> c
+    com.baidu.mobstat.p a -> a
+    java.lang.String a() -> a
+    long b() -> b
+com.baidu.mobstat.r -> com.a.a.p:
+    android.os.HandlerThread a -> a
+    android.os.Handler b -> b
+    long c -> c
+    long d -> d
+    java.lang.ref.WeakReference e -> e
+    com.baidu.mobstat.p f -> f
+    com.baidu.mobstat.r g -> g
+    int h -> h
+    boolean i -> i
+    boolean j -> j
+    int a() -> a
+    com.baidu.mobstat.r b() -> b
+    boolean e() -> e
+    void a(boolean) -> a
+    boolean a(long) -> a
+    void a(android.content.Context,long) -> a
+    void b(android.content.Context,long) -> b
+    void c(android.content.Context,long) -> c
+    void a(android.content.Context) -> a
+    void c() -> c
+    long d() -> d
+    com.baidu.mobstat.p a(com.baidu.mobstat.r) -> a
+    void a(com.baidu.mobstat.r,android.content.Context) -> a
+    void a(com.baidu.mobstat.r,android.content.Context,long) -> a
+com.baidu.mobstat.s -> com.a.a.q:
+    com.baidu.mobstat.r a -> a
+    void run() -> run
+com.baidu.mobstat.t -> com.a.a.r:
+    long b -> b
+    java.lang.ref.WeakReference c -> c
+    long d -> d
+    java.lang.ref.WeakReference e -> e
+    com.baidu.mobstat.r a -> a
+    void run() -> run
+com.baidu.mobstat.u -> com.a.a.s:
+    long b -> b
+    long c -> c
+    java.lang.ref.WeakReference d -> d
+    com.baidu.mobstat.r a -> a
+    void run() -> run
+com.baidu.mobstat.v -> com.a.a.t:
+    java.lang.String a(android.content.Context,java.lang.String) -> a
+    int a(android.content.Context) -> a
+    int b(android.content.Context) -> b
+    int c(android.content.Context) -> c
+    java.lang.String d(android.content.Context) -> d
+    java.lang.String a(android.content.Context,java.lang.String,java.lang.String,int,int) -> a
+    java.lang.String e(android.content.Context) -> e
+    java.lang.String f(android.content.Context) -> f
+    java.lang.String g(android.content.Context) -> g
+    java.lang.String h(android.content.Context) -> h
+    java.lang.String i(android.content.Context) -> i
+    android.util.DisplayMetrics j(android.content.Context) -> j
+    boolean k(android.content.Context) -> k
+    boolean l(android.content.Context) -> l
+    boolean m(android.content.Context) -> m
+com.pubukeji.diandeows.AdType -> com.pubukeji.diandeows.a:
+    com.pubukeji.diandeows.AdType BANNER -> a
+    com.pubukeji.diandeows.AdType INSERTSCREEN -> b
+    com.pubukeji.diandeows.AdType FULLSCREEN -> c
+    int a -> d
+    com.pubukeji.diandeows.AdType[] b -> e
+    int getValue() -> a
+    com.pubukeji.diandeows.AdType[] values() -> values
+    com.pubukeji.diandeows.AdType valueOf(java.lang.String) -> valueOf
+com.pubukeji.diandeows.a -> com.pubukeji.diandeows.b:
+    int[] b(int) -> a
+com.pubukeji.diandeows.a.a -> com.pubukeji.diandeows.a.a:
+    char[] b -> b
+    byte[] c -> c
+    byte[] a -> a
+    int a() -> a
+    int b() -> b
+    void a(java.io.PushbackInputStream,java.io.OutputStream,int) -> a
+com.pubukeji.diandeows.a.b -> com.pubukeji.diandeows.a.b:
+    char[] b -> b
+    int a() -> a
+    int b() -> b
+    void a(java.io.OutputStream,byte[],int,int) -> a
+com.pubukeji.diandeows.a.c -> com.pubukeji.diandeows.a.c:
+com.pubukeji.diandeows.a.d -> com.pubukeji.diandeows.a.d:
+com.pubukeji.diandeows.a.e -> com.pubukeji.diandeows.a.e:
+    int a() -> a
+    int b() -> b
+    void a(java.io.PushbackInputStream,java.io.OutputStream) -> a
+    void b(java.io.PushbackInputStream,java.io.OutputStream) -> b
+    int c(java.io.PushbackInputStream,java.io.OutputStream) -> c
+    void d(java.io.PushbackInputStream,java.io.OutputStream) -> d
+    void a(java.io.PushbackInputStream,java.io.OutputStream,int) -> a
+    int a(java.io.InputStream,byte[],int,int) -> a
+    void a(java.io.InputStream,java.io.OutputStream) -> a
+    byte[] a(java.lang.String) -> a
+com.pubukeji.diandeows.a.f -> com.pubukeji.diandeows.a.f:
+    java.io.PrintStream a -> a
+    int a() -> a
+    int b() -> b
+    void a(java.io.OutputStream) -> a
+    void b(java.io.OutputStream) -> b
+    void a(java.io.OutputStream,int) -> a
+    void c(java.io.OutputStream) -> c
+    void a(java.io.OutputStream,byte[],int,int) -> a
+    int a(java.io.InputStream,byte[]) -> a
+    void a(java.io.InputStream,java.io.OutputStream) -> a
+    java.lang.String a(byte[]) -> a
+com.pubukeji.diandeows.a.g -> com.pubukeji.diandeows.a.g:
+    com.pubukeji.diandeows.a.a a -> a
+    com.pubukeji.diandeows.a.b b -> b
+    java.lang.String a(java.lang.String,java.lang.String) -> a
+    byte[] b(byte[],byte[]) -> a
+com.pubukeji.diandeows.a.h -> com.pubukeji.diandeows.a.h:
+    java.lang.String a(byte[],byte[]) -> a
+com.pubukeji.diandeows.a.i -> com.pubukeji.diandeows.a.i:
+    java.lang.String a(java.lang.String) -> a
+com.pubukeji.diandeows.adviews.DiandeActivity -> com.pubukeji.diandeows.adviews.DiandeActivity:
+    int b -> a
+    android.webkit.WebView c -> b
+    java.lang.String d -> c
+    java.lang.String e -> d
+    android.widget.ProgressBar f -> e
+    java.lang.String g -> f
+    com.pubukeji.diandeows.b.a h -> g
+    int i -> h
+    int j -> i
+    int k -> j
+    int l -> k
+    int m -> l
+    int n -> m
+    int o -> n
+    android.app.AlertDialog$Builder p -> o
+    android.os.Handler q -> p
+    void onCreate(android.os.Bundle) -> onCreate
+    void a(android.content.Context) -> a
+    android.view.View a() -> a
+    void a(java.lang.String) -> a
+    void onDestroy() -> onDestroy
+    void a(com.pubukeji.diandeows.adviews.DiandeActivity,android.app.AlertDialog$Builder) -> a
+    android.app.AlertDialog$Builder a(com.pubukeji.diandeows.adviews.DiandeActivity) -> a
+    java.lang.String b(com.pubukeji.diandeows.adviews.DiandeActivity) -> b
+    com.pubukeji.diandeows.b.a c(com.pubukeji.diandeows.adviews.DiandeActivity) -> c
+    android.webkit.WebView d(com.pubukeji.diandeows.adviews.DiandeActivity) -> d
+    android.widget.ProgressBar e(com.pubukeji.diandeows.adviews.DiandeActivity) -> e
+    java.lang.String f(com.pubukeji.diandeows.adviews.DiandeActivity) -> f
+    android.os.Handler g(com.pubukeji.diandeows.adviews.DiandeActivity) -> g
+com.pubukeji.diandeows.adviews.DiandeAdWebView -> com.pubukeji.diandeows.adviews.a:
+    int b -> a
+    int c -> b
+    android.content.Context d -> c
+    android.view.View e -> d
+    android.view.animation.AnimationSet f -> e
+    android.view.animation.ScaleAnimation g -> f
+    android.view.animation.ScaleAnimation h -> g
+    com.pubukeji.diandeows.adviews.DiandeResultCallback i -> h
+    com.pubukeji.diandeows.adviews.DiandeBanner j -> i
+    android.app.Dialog k -> j
+    boolean l -> k
+    void setRequestCallBack(com.pubukeji.diandeows.adviews.DiandeResultCallback) -> setRequestCallBack
+    void onMeasure(int,int) -> onMeasure
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    android.content.Context a(com.pubukeji.diandeows.adviews.DiandeAdWebView) -> a
+    android.app.Dialog b(com.pubukeji.diandeows.adviews.DiandeAdWebView) -> b
+    com.pubukeji.diandeows.adviews.DiandeResultCallback c(com.pubukeji.diandeows.adviews.DiandeAdWebView) -> c
+    boolean d(com.pubukeji.diandeows.adviews.DiandeAdWebView) -> d
+    android.view.animation.AnimationSet e(com.pubukeji.diandeows.adviews.DiandeAdWebView) -> e
+    com.pubukeji.diandeows.adviews.DiandeBanner f(com.pubukeji.diandeows.adviews.DiandeAdWebView) -> f
+com.pubukeji.diandeows.adviews.DiandeBanner -> com.pubukeji.diandeows.adviews.b:
+    java.util.Timer b -> a
+    boolean c -> b
+    com.pubukeji.diandeows.b.a d -> c
+    int e -> d
+    int f -> e
+    java.lang.String g -> f
+    android.content.Context h -> g
+    com.pubukeji.diandeows.adviews.s i -> h
+    java.lang.String j -> i
+    com.pubukeji.diandeows.adviews.DiandeResultCallback k -> j
+    com.pubukeji.diandeows.adviews.t l -> k
+    boolean m -> l
+    com.pubukeji.diandeows.adviews.DiandeAdWebView n -> m
+    android.os.Handler o -> n
+    com.pubukeji.diandeows.work.RequestDataService p -> o
+    void setRequestCallBack(com.pubukeji.diandeows.adviews.DiandeResultCallback) -> setRequestCallBack
+    void setAD_ID(java.lang.String) -> setAD_ID
+    void InitBanner(android.content.Context,java.lang.String) -> a
+    void initAnimation() -> d
+    void getScreenSize() -> getScreenSize
+    void startTimer() -> e
+    void initBannerView() -> f
+    void init() -> g
+    void show() -> a
+    void uploadImPression() -> h
+    void show1() -> i
+    void initBannerWebViewInfo(android.content.Context,android.view.View) -> a
+    void close() -> b
+    void onBannerShowCallBack() -> c
+    void submitRecieved(com.pubukeji.diandeows.b.a) -> a
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void onWindowVisibilityChanged(int) -> onWindowVisibilityChanged
+    void registerScreenStateBroadcastReceiver() -> j
+    void unregisterScreenStateBroadcastReceiver() -> k
+    void a(com.pubukeji.diandeows.adviews.DiandeBanner) -> a
+    com.pubukeji.diandeows.b.a b(com.pubukeji.diandeows.adviews.DiandeBanner) -> b
+    com.pubukeji.diandeows.work.RequestDataService c(com.pubukeji.diandeows.adviews.DiandeBanner) -> c
+    android.content.Context d(com.pubukeji.diandeows.adviews.DiandeBanner) -> d
+    java.util.Timer e(com.pubukeji.diandeows.adviews.DiandeBanner) -> e
+    boolean f(com.pubukeji.diandeows.adviews.DiandeBanner) -> f
+    android.os.Handler g(com.pubukeji.diandeows.adviews.DiandeBanner) -> g
+    boolean h(com.pubukeji.diandeows.adviews.DiandeBanner) -> h
+    void a(com.pubukeji.diandeows.adviews.DiandeBanner,boolean) -> a
+    com.pubukeji.diandeows.adviews.DiandeResultCallback i(com.pubukeji.diandeows.adviews.DiandeBanner) -> i
+    void a(com.pubukeji.diandeows.adviews.DiandeBanner,com.pubukeji.diandeows.b.a) -> a
+    void b(com.pubukeji.diandeows.adviews.DiandeBanner,com.pubukeji.diandeows.b.a) -> b
+    com.pubukeji.diandeows.adviews.DiandeAdWebView j(com.pubukeji.diandeows.adviews.DiandeBanner) -> j
+com.pubukeji.diandeows.adviews.DiandeResultCallback -> com.pubukeji.diandeows.adviews.c:
+    void onSuccess(boolean,java.lang.String) -> a
+    void onFailed(java.lang.String) -> a
+    void onAdShowSuccess(int,java.lang.String) -> a
+com.pubukeji.diandeows.adviews.a -> com.pubukeji.diandeows.adviews.d:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    void dispatchMessage(android.os.Message) -> dispatchMessage
+    com.pubukeji.diandeows.adviews.DiandeActivity a(com.pubukeji.diandeows.adviews.a) -> a
+com.pubukeji.diandeows.adviews.b -> com.pubukeji.diandeows.adviews.e:
+    com.pubukeji.diandeows.adviews.a a -> a
+    java.lang.String b -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.pubukeji.diandeows.adviews.c -> com.pubukeji.diandeows.adviews.f:
+    com.pubukeji.diandeows.adviews.a a -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.pubukeji.diandeows.adviews.d -> com.pubukeji.diandeows.adviews.g:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.pubukeji.diandeows.adviews.e -> com.pubukeji.diandeows.adviews.h:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.pubukeji.diandeows.adviews.f -> com.pubukeji.diandeows.adviews.i:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.pubukeji.diandeows.adviews.g -> com.pubukeji.diandeows.adviews.j:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.pubukeji.diandeows.adviews.h -> com.pubukeji.diandeows.adviews.k:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.pubukeji.diandeows.adviews.i -> com.pubukeji.diandeows.adviews.l:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long) -> onDownloadStart
+com.pubukeji.diandeows.adviews.j -> com.pubukeji.diandeows.adviews.m:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+com.pubukeji.diandeows.adviews.k -> com.pubukeji.diandeows.adviews.n:
+    com.pubukeji.diandeows.adviews.DiandeActivity a -> a
+    void onProgressChanged(android.webkit.WebView,int) -> onProgressChanged
+com.pubukeji.diandeows.adviews.l -> com.pubukeji.diandeows.adviews.o:
+    com.pubukeji.diandeows.adviews.DiandeAdWebView a -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onLoadResource(android.webkit.WebView,java.lang.String) -> onLoadResource
+    void onTooManyRedirects(android.webkit.WebView,android.os.Message,android.os.Message) -> onTooManyRedirects
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    void onFormResubmission(android.webkit.WebView,android.os.Message,android.os.Message) -> onFormResubmission
+    void doUpdateVisitedHistory(android.webkit.WebView,java.lang.String,boolean) -> doUpdateVisitedHistory
+    void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError) -> onReceivedSslError
+    void onReceivedHttpAuthRequest(android.webkit.WebView,android.webkit.HttpAuthHandler,java.lang.String,java.lang.String) -> onReceivedHttpAuthRequest
+    boolean shouldOverrideKeyEvent(android.webkit.WebView,android.view.KeyEvent) -> shouldOverrideKeyEvent
+    void onUnhandledKeyEvent(android.webkit.WebView,android.view.KeyEvent) -> onUnhandledKeyEvent
+    void onScaleChanged(android.webkit.WebView,float,float) -> onScaleChanged
+com.pubukeji.diandeows.adviews.m -> com.pubukeji.diandeows.adviews.p:
+    com.pubukeji.diandeows.adviews.DiandeBanner a -> a
+    boolean handleMessage(android.os.Message) -> handleMessage
+com.pubukeji.diandeows.adviews.n -> com.pubukeji.diandeows.adviews.q:
+    com.pubukeji.diandeows.adviews.DiandeBanner a -> a
+    void a(boolean,java.lang.String) -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.adviews.o -> com.pubukeji.diandeows.adviews.r:
+    com.pubukeji.diandeows.adviews.DiandeBanner a -> a
+    void a() -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.adviews.p -> com.pubukeji.diandeows.adviews.s:
+    com.pubukeji.diandeows.adviews.DiandeBanner a -> a
+    void a(com.pubukeji.diandeows.b.a) -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.adviews.q -> com.pubukeji.diandeows.adviews.t:
+    com.pubukeji.diandeows.adviews.DiandeBanner a -> a
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+com.pubukeji.diandeows.adviews.r -> com.pubukeji.diandeows.adviews.u:
+    com.pubukeji.diandeows.adviews.DiandeBanner a -> a
+    void onClick(android.view.View) -> onClick
+com.pubukeji.diandeows.adviews.s -> com.pubukeji.diandeows.adviews.v:
+    boolean b -> b
+    com.pubukeji.diandeows.adviews.DiandeBanner a -> a
+    void a(boolean) -> a
+    void run() -> run
+com.pubukeji.diandeows.adviews.t -> com.pubukeji.diandeows.adviews.w:
+    com.pubukeji.diandeows.adviews.DiandeBanner a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.pubukeji.diandeows.b.a -> com.pubukeji.diandeows.b.a:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    java.lang.String g() -> f
+    java.lang.String toString() -> toString
+com.pubukeji.diandeows.b.b -> com.pubukeji.diandeows.b.b:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String toString() -> toString
+com.pubukeji.diandeows.b.c -> com.pubukeji.diandeows.b.c:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.lang.String b() -> b
+    void b(java.lang.String) -> b
+    java.lang.String c() -> c
+    void c(java.lang.String) -> c
+com.pubukeji.diandeows.c -> com.pubukeji.diandeows.c:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    java.lang.String i -> i
+    java.lang.String j -> j
+    java.lang.String k -> k
+    java.lang.String l -> l
+    java.lang.String m -> m
+    java.lang.String n -> n
+com.pubukeji.diandeows.c.a -> com.pubukeji.diandeows.c.a:
+    void a() -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.c.b -> com.pubukeji.diandeows.c.b:
+    void a(java.lang.String) -> a
+    void a(com.pubukeji.diandeows.b.a) -> a
+com.pubukeji.diandeows.c.c -> com.pubukeji.diandeows.c.c:
+    void a(boolean,java.lang.String) -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.d -> com.pubukeji.diandeows.d:
+    boolean a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String a(android.content.Context) -> a
+    java.lang.String b(android.content.Context) -> b
+com.pubukeji.diandeows.d.a -> com.pubukeji.diandeows.d.a:
+    java.net.URL b -> a
+    java.io.File c -> b
+    int d -> c
+    int e -> d
+    int f -> e
+    boolean g -> f
+    int h -> g
+    com.pubukeji.diandeows.f.d i -> h
+    com.pubukeji.diandeows.d.b j -> i
+    void run() -> run
+    boolean a() -> a
+    int b() -> b
+com.pubukeji.diandeows.d.b -> com.pubukeji.diandeows.d.b:
+    java.net.HttpURLConnection a(java.lang.String) -> a
+    java.net.HttpURLConnection a(java.net.HttpURLConnection) -> a
+com.pubukeji.diandeows.d.c -> com.pubukeji.diandeows.d.c:
+    com.pubukeji.diandeows.d.b a -> a
+    boolean verify(java.lang.String,javax.net.ssl.SSLSession) -> verify
+com.pubukeji.diandeows.d.d -> com.pubukeji.diandeows.d.d:
+    com.pubukeji.diandeows.d.b a -> a
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+com.pubukeji.diandeows.f.a -> com.pubukeji.diandeows.e.a:
+    java.lang.String a -> a
+    android.content.Context b -> b
+    int c -> c
+    android.app.Notification d -> d
+    android.widget.RemoteViews e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    android.app.NotificationManager k -> j
+    com.pubukeji.diandeows.f.c l -> k
+    boolean m -> l
+    java.io.RandomAccessFile n -> m
+    com.pubukeji.diandeows.d.b o -> n
+    void a(java.lang.Boolean) -> a
+    java.lang.Boolean a(java.lang.String[]) -> a
+    void b() -> b
+    void a(java.lang.Integer[]) -> a
+    void onPreExecute() -> onPreExecute
+    boolean c() -> c
+    void onCancelled() -> onCancelled
+    void d() -> d
+    void a(int) -> a
+    java.lang.String a() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+com.pubukeji.diandeows.f.b -> com.pubukeji.diandeows.e.b:
+    com.pubukeji.diandeows.f.a a -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.f.c -> com.pubukeji.diandeows.e.c:
+    void a(com.pubukeji.diandeows.f.a) -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.f.d -> com.pubukeji.diandeows.e.d:
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.http.HttpPostThread -> com.pubukeji.diandeows.f.a:
+    int b -> a
+    int c -> b
+    android.content.Context d -> c
+    com.pubukeji.diandeows.http.a e -> d
+    java.lang.String f -> e
+    com.pubukeji.diandeows.http.d g -> f
+    android.os.Handler h -> g
+    void a(com.pubukeji.diandeows.http.a,java.lang.String,com.pubukeji.diandeows.http.d) -> a
+    void a(org.apache.http.client.methods.HttpGet) -> a
+    void run() -> run
+    void a(int,java.lang.String) -> a
+    com.pubukeji.diandeows.http.d a(com.pubukeji.diandeows.http.HttpPostThread) -> a
+com.pubukeji.diandeows.http.a -> com.pubukeji.diandeows.f.b:
+    java.util.List a -> a
+    java.util.List a() -> a
+    void a(java.util.List) -> a
+com.pubukeji.diandeows.http.b -> com.pubukeji.diandeows.f.c:
+    com.pubukeji.diandeows.http.HttpPostThread a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.pubukeji.diandeows.http.c -> com.pubukeji.diandeows.f.d:
+    com.pubukeji.diandeows.http.HttpPostThread a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.pubukeji.diandeows.http.d -> com.pubukeji.diandeows.f.e:
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+com.pubukeji.diandeows.http.e -> com.pubukeji.diandeows.f.f:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+com.pubukeji.diandeows.o -> com.pubukeji.diandeows.e:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+com.pubukeji.diandeows.r -> com.pubukeji.diandeows.f:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+com.pubukeji.diandeows.reciever.AppInstalledReceiver -> com.pubukeji.diandeows.reciever.AppInstalledReceiver:
+    android.content.Context b -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    com.pubukeji.diandeows.b.a a(java.lang.String) -> a
+    void a(com.pubukeji.diandeows.b.a) -> a
+com.pubukeji.diandeows.reciever.a -> com.pubukeji.diandeows.reciever.a:
+    java.util.List a -> a
+    com.pubukeji.diandeows.reciever.a b -> b
+    int a() -> a
+    com.pubukeji.diandeows.reciever.a b() -> b
+    void a(com.pubukeji.diandeows.b.a) -> a
+    com.pubukeji.diandeows.b.a a(int) -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.s -> com.pubukeji.diandeows.g:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+com.pubukeji.diandeows.services.DownloadService -> com.pubukeji.diandeows.services.DownloadService:
+    android.content.Context a -> a
+    android.app.DownloadManager b -> b
+    java.lang.String c -> c
+    com.pubukeji.diandeows.services.b d -> d
+    java.util.ArrayList e -> e
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    boolean a() -> a
+    long b() -> b
+    void a(java.lang.String,java.lang.String) -> a
+    void b(java.lang.String,java.lang.String) -> b
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    android.app.DownloadManager a(com.pubukeji.diandeows.services.DownloadService) -> a
+    java.util.ArrayList b(com.pubukeji.diandeows.services.DownloadService) -> b
+    android.content.Context c(com.pubukeji.diandeows.services.DownloadService) -> c
+com.pubukeji.diandeows.services.UploadService -> com.pubukeji.diandeows.services.UploadService:
+    java.util.List b -> a
+    int c -> b
+    int d -> c
+    int e -> d
+    com.pubukeji.diandeows.services.UploadService f -> e
+    com.pubukeji.diandeows.work.RequestDataService g -> f
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void a(java.lang.String) -> a
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void a() -> a
+    void a(com.pubukeji.diandeows.b.a) -> a
+    void a(com.pubukeji.diandeows.services.UploadService,int) -> a
+    com.pubukeji.diandeows.services.UploadService a(com.pubukeji.diandeows.services.UploadService) -> a
+com.pubukeji.diandeows.services.a -> com.pubukeji.diandeows.services.a:
+    com.pubukeji.diandeows.services.DownloadService a -> a
+    void a(com.pubukeji.diandeows.f.a) -> a
+    void a(java.lang.String) -> a
+com.pubukeji.diandeows.services.b -> com.pubukeji.diandeows.services.b:
+    com.pubukeji.diandeows.services.DownloadService a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.pubukeji.diandeows.services.c -> com.pubukeji.diandeows.services.c:
+    com.pubukeji.diandeows.services.UploadService a -> a
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+com.pubukeji.diandeows.t -> com.pubukeji.diandeows.h:
+    java.lang.String a -> a
+    java.lang.String b -> b
+com.pubukeji.diandeows.util.MathUtils -> com.pubukeji.diandeows.g.a:
+    java.util.Random a -> a
+    char[] b -> b
+    com.pubukeji.diandeows.util.MathUtils c -> c
+    com.pubukeji.diandeows.util.MathUtils a() -> a
+    java.lang.String a(int) -> a
+    java.lang.String a(android.content.Context) -> a
+    java.lang.String a(java.lang.String) -> a
+    java.lang.String b(java.lang.String) -> b
+    java.lang.String a(java.lang.String,android.content.Context) -> a
+com.pubukeji.diandeows.util.a -> com.pubukeji.diandeows.g.b:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String a() -> a
+    java.lang.String a(android.content.Context) -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+com.pubukeji.diandeows.util.c -> com.pubukeji.diandeows.g.c:
+    android.net.wifi.WifiManager a -> a
+    java.lang.String a(android.content.Context) -> a
+    java.lang.String a() -> a
+    java.lang.String b(android.content.Context) -> b
+    int[] d(android.content.Context) -> c
+    int[] a(android.content.Context,int[]) -> a
+    android.util.DisplayMetrics n(android.content.Context) -> h
+    int b() -> b
+    int j(android.content.Context) -> d
+    java.lang.String k(android.content.Context) -> e
+    java.lang.String l(android.content.Context) -> f
+    java.lang.String m(android.content.Context) -> g
+com.pubukeji.diandeows.util.d -> com.pubukeji.diandeows.g.d:
+    boolean a -> a
+    void a(java.lang.String,java.lang.String) -> a
+com.pubukeji.diandeows.util.e -> com.pubukeji.diandeows.g.e:
+    int a(android.content.Context,java.lang.String,java.lang.String) -> a
+com.pubukeji.diandeows.work.RequestDataService -> com.pubukeji.diandeows.h.a:
+    com.pubukeji.diandeows.work.a b -> a
+    android.content.Context c -> b
+    android.content.pm.PackageManager d -> c
+    com.pubukeji.diandeows.AdType e -> d
+    java.lang.String f -> e
+    void a(int[],com.pubukeji.diandeows.c.b) -> a
+    void a(com.pubukeji.diandeows.c.c) -> a
+    java.lang.String a(com.pubukeji.diandeows.b.a) -> a
+    void a(java.lang.String,java.lang.String,java.lang.String,com.pubukeji.diandeows.c.a) -> a
+    java.util.List a() -> a
+    void b() -> b
+    void b(java.util.List) -> b
+    java.lang.String a(java.util.List) -> a
+    void a(com.pubukeji.diandeows.b.a,com.pubukeji.diandeows.http.d) -> a
+    void b(com.pubukeji.diandeows.b.a,com.pubukeji.diandeows.http.d) -> b
+    com.pubukeji.diandeows.work.a a(com.pubukeji.diandeows.work.RequestDataService) -> a
+    void a(com.pubukeji.diandeows.work.RequestDataService,com.pubukeji.diandeows.work.a) -> a
+    android.content.Context b(com.pubukeji.diandeows.work.RequestDataService) -> b
+    void c(com.pubukeji.diandeows.work.RequestDataService) -> c
+com.pubukeji.diandeows.work.a -> com.pubukeji.diandeows.h.b:
+    com.pubukeji.diandeows.b.c a(android.content.Context,java.lang.String) -> a
+    void a(com.pubukeji.diandeows.b.c,java.lang.String,java.lang.String) -> a
+com.pubukeji.diandeows.work.b -> com.pubukeji.diandeows.h.c:
+    com.pubukeji.diandeows.work.RequestDataService a -> a
+    com.pubukeji.diandeows.c.b b -> b
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+com.pubukeji.diandeows.work.c -> com.pubukeji.diandeows.h.d:
+    com.pubukeji.diandeows.work.RequestDataService a -> a
+    com.pubukeji.diandeows.c.c b -> b
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+com.pubukeji.diandeows.work.d -> com.pubukeji.diandeows.h.e:
+    com.pubukeji.diandeows.work.RequestDataService a -> a
+    com.pubukeji.diandeows.c.a b -> b
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+com.pubukeji.diandeows.work.e -> com.pubukeji.diandeows.h.f:
+    com.pubukeji.diandeows.work.RequestDataService a -> a
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+com.pubukeji.diandeows.work.f -> com.pubukeji.diandeows.h.g:
+    com.pubukeji.diandeows.work.RequestDataService a -> a
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+minggo.battery.BatteryService -> minggo.battery.BatteryService:
+    android.app.NotificationManager notificationManager -> d
+    android.app.Notification notification -> e
+    android.widget.RemoteViews remoteViews -> f
+    android.content.Context context -> g
+    int[] image -> h
+    int[] image1 -> i
+    android.content.res.AssetManager asm -> j
+    int cuurentLevel -> k
+    minggo.battery.util.MinggoDate date -> l
+    boolean lowPowerSoundFlag -> a
+    boolean zhengSoundFlag -> b
+    minggo.battery.reciever.TimeChangeReciever timeChangeReciever -> c
+    android.content.BroadcastReceiver broadcastReceiver -> m
+    void onCreate() -> onCreate
+    void initImage() -> b
+    java.lang.String getDayPrompt() -> a
+    void initBattery() -> c
+    void modifyBattery(int) -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    void access$0(minggo.battery.BatteryService,int) -> a
+minggo.battery.BatteryService$1 -> minggo.battery.a:
+    int level -> a
+    int scale -> b
+    minggo.battery.BatteryService this$0 -> c
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+minggo.battery.activity.MainActivity -> minggo.battery.activity.MainActivity:
+    android.widget.TextView versionTips -> b
+    android.widget.Button lowPowerbt -> c
+    android.widget.Button timeSoundbt -> d
+    android.widget.Button exitbt -> e
+    android.widget.Button submitbt -> f
+    android.widget.Button changebt -> g
+    android.widget.RelativeLayout rl_ad -> h
+    java.lang.String banner_AD_ID -> i
+    com.pubukeji.diandeows.adviews.DiandeBanner banner -> j
+    android.widget.ImageView cancelAdBt -> k
+    android.content.res.AssetManager assetManager -> a
+    minggo.battery.util.ShakeListener mShakeListener -> l
+    android.os.Vibrator mVibrator -> m
+    android.widget.ImageView seZiiv -> n
+    int i -> o
+    int j -> p
+    android.os.Handler hdl -> q
+    boolean changejiawu -> r
+    int[] sourceIds -> s
+    int[] sourceIds2 -> t
+    java.lang.String telephone -> u
+    void onCreate(android.os.Bundle) -> onCreate
+    void initAdUI() -> c
+    void initShock() -> a
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onClick(android.view.View) -> onClick
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean startVibrato() -> b
+    void shake_activity_back(android.view.View) -> shake_activity_back
+    void onDestroy() -> onDestroy
+    android.widget.ImageView access$0(minggo.battery.activity.MainActivity) -> a
+    boolean access$1(minggo.battery.activity.MainActivity) -> b
+    java.lang.String access$2(minggo.battery.activity.MainActivity) -> c
+    minggo.battery.util.ShakeListener access$3(minggo.battery.activity.MainActivity) -> d
+    android.os.Vibrator access$4(minggo.battery.activity.MainActivity) -> e
+    android.os.Handler access$5(minggo.battery.activity.MainActivity) -> f
+    int access$6(minggo.battery.activity.MainActivity) -> g
+    int access$7(minggo.battery.activity.MainActivity) -> h
+    void access$8(minggo.battery.activity.MainActivity,int) -> a
+    android.widget.ImageView access$9(minggo.battery.activity.MainActivity) -> i
+    void access$10(minggo.battery.activity.MainActivity,int) -> b
+    int[] access$11(minggo.battery.activity.MainActivity) -> j
+    int[] access$12(minggo.battery.activity.MainActivity) -> k
+minggo.battery.activity.MainActivity$1 -> minggo.battery.activity.a:
+    minggo.battery.activity.MainActivity this$0 -> a
+    void onSuccess(boolean,java.lang.String) -> a
+    void onFailed(java.lang.String) -> a
+    void onAdShowSuccess(int,java.lang.String) -> a
+minggo.battery.activity.MainActivity$2 -> minggo.battery.activity.b:
+    minggo.battery.activity.MainActivity this$0 -> a
+    void onShake() -> a
+    minggo.battery.activity.MainActivity access$0(minggo.battery.activity.MainActivity$2) -> a
+minggo.battery.activity.MainActivity$2$1 -> minggo.battery.activity.c:
+    minggo.battery.activity.MainActivity$2 this$1 -> a
+    void run() -> run
+minggo.battery.activity.MainActivity$2$2 -> minggo.battery.activity.d:
+    minggo.battery.activity.MainActivity$2 this$1 -> a
+    void run() -> run
+minggo.battery.activity.MainActivity$2$3 -> minggo.battery.activity.e:
+    minggo.battery.activity.MainActivity$2 this$1 -> a
+    void run() -> run
+minggo.battery.reciever.TimeChangeReciever -> minggo.battery.reciever.a:
+    minggo.battery.util.MinggoDate date -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+minggo.battery.reciever.TurnOnReciever -> minggo.battery.reciever.TurnOnReciever:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+minggo.battery.util.MinggoDate -> minggo.battery.a.a:
+    java.lang.String dateStr -> a
+    java.util.Date date -> b
+    java.util.Calendar calendar -> c
+    java.lang.String toString() -> toString
+    int get24Hour() -> a
+    int getMinutes() -> b
+    int getDayOfWeek() -> c
+minggo.battery.util.PlaySound -> minggo.battery.a.b:
+    android.media.MediaPlayer player -> a
+    minggo.battery.util.PlaySound playSound -> b
+    boolean flag -> c
+    minggo.battery.util.PlaySound getInstance() -> a
+    void play(java.lang.String,android.content.res.AssetManager) -> a
+    void access$0(minggo.battery.util.PlaySound,boolean) -> a
+minggo.battery.util.PlaySound$1 -> minggo.battery.a.c:
+    minggo.battery.util.PlaySound this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+minggo.battery.util.PreferenceShareUtil -> minggo.battery.a.d:
+    boolean getLowPowerFlag(android.content.Context) -> a
+    boolean getZhengTimeFlag(android.content.Context) -> b
+    void saveLowPowerFlag(android.content.Context,boolean) -> a
+    void saveZhengTimeFlag(android.content.Context,boolean) -> b
+minggo.battery.util.ShakeListener -> minggo.battery.a.e:
+    android.hardware.SensorManager sensorManager -> a
+    android.hardware.Sensor sensor -> b
+    minggo.battery.util.ShakeListener$OnShakeListener onShakeListener -> c
+    android.content.Context mContext -> d
+    float lastX -> e
+    float lastY -> f
+    float lastZ -> g
+    long lastUpdateTime -> h
+    void start() -> a
+    void stop() -> b
+    void setOnShakeListener(minggo.battery.util.ShakeListener$OnShakeListener) -> a
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent) -> handshakeCompleted
+minggo.battery.util.ShakeListener$OnShakeListener -> minggo.battery.a.f:
+    void onShake() -> a

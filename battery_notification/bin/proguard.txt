@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:80
+-keep class com.pubukeji.diandeows.adviews.DiandeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class com.pubukeji.diandeows.reciever.AppInstalledReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.pubukeji.diandeows.services.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.pubukeji.diandeows.services.UploadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class minggo.battery.BatteryService { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class minggo.battery.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class minggo.battery.reciever.TurnOnReciever { <init>(...); }
+
